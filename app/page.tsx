@@ -39,7 +39,7 @@ export default function Home() {
                 View all
               </Link>
             </div>
-            <div className="flex gap-4 overflow-hidden ">
+            <div className="flex gap-4 overflow-x-auto ">
               {[1, 2, 3, 4, 5, 6].map((it, i) => (
                 <div key={it} className="w-fit">
                   <div className="w-32 h-24 bg-fuchsia-300 rounded-md">

@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className="mt-8">
         {["Popular Trends", "Featured Ads", "Top Deals"].map((section, i) => (
-          <div className="mb-4">
+          <div key={section} className="mb-4">
             <div className="flex  justify-between">
               <p className="font-bold">{section}</p>
               <Link
@@ -38,9 +38,9 @@ export default function Home() {
                 View all
               </Link>
             </div>
-            <div className="flex gap-4 overflow-scroll ">
+            <div className="flex gap-4 overflow-hidden ">
               {[1, 2, 3, 4, 5, 6].map((it, i) => (
-                <div className="w-fit">
+                <div key={it} className="w-fit">
                   <div className="w-32 h-24 bg-fuchsia-300 rounded-md">
                     Image{i}
                   </div>

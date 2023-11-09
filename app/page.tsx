@@ -18,6 +18,7 @@ export default function Home() {
             ["Jobs", "bg-amber-400"],
           ].map((it, i) => (
             <div
+              key={it[0]}
               className={` flex justify-center items-center flex-grow rounded-md p-2 ${it[1]}`}
             >
               {it[0]}
